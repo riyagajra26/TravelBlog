@@ -1,0 +1,202 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffaf5;
+    color: #51445f;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #dcd6f7;
+    padding: 18px 7%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    color: #55436f;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #55436f;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #a4779b;
+}
+
+/* Home Section */
+.hero {
+    background-color: #f9d5c2;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    color: #684c5b;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #a58bbd;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.btn:hover {
+    background-color: #856b9f;
+}
+
+/* Destinations Section */
+#destinations {
+    padding: 50px 7%;
+    text-align: center;
+    background-color: #fffaf5;
+}
+
+#destinations h2,
+.about h2 {
+    font-size: 28px;
+    color: #80628f;
+    margin-bottom: 15px;
+}
+
+.intro {
+    margin-bottom: 30px;
+    color: #817487;
+}
+
+/* Destination Cards */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #f7edf2;
+    width: 300px;
+    padding-bottom: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(100, 70, 100, 0.12);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.card h3 {
+    color: #946d91;
+    margin: 15px 0;
+}
+
+.card p {
+    font-size: 14px;
+    padding: 5px 15px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+/* Read More Button */
+.card button {
+    background-color: #b49ac8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #8c729f;
+}
+
+/* About Section */
+.about {
+    background-color: #e3eee5;
+    padding: 55px 10%;
+    text-align: center;
+}
+
+.about p {
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+/* Footer */
+footer {
+    background-color: #dcd6f7;
+    color: #55436f;
+    text-align: center;
+    padding: 20px;
+    line-height: 1.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
